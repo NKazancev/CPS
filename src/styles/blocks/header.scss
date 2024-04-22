@@ -1,0 +1,58 @@
+.header {
+    min-height: 88px;
+    background-color: $white;
+    border-bottom: 1px solid $aqua-light;
+
+    &__body {
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__menu {
+        margin-right: 17px;
+    }
+
+    &__logo {
+        flex-grow: 1;
+    }
+
+    &__buttons {
+        display: none;
+        @media (min-width: $pretablet) {
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        column-gap: 16px;
+    }
+
+    &__divider {
+        width: 2px;
+        height: 32px;
+        background-color: $grey;
+        border-radius: 50%;
+        
+        &--left {
+            display: none;
+            @media (min-width: $pretablet){
+                display: block;
+                margin: 0 20px 0 3px;
+            }
+        }
+        
+        &--right {
+            margin: 0 20px 0 0;
+            @media (min-width: $pretablet) {
+                margin: 0 20px;
+            }
+        }
+    }
+}
